@@ -19,6 +19,14 @@
 
 	<build>
 		<plugins>
+			<plugin>
+  <groupId>org.mule.tools.maven</groupId>
+  <artifactId>exchange-mule-maven-plugin</artifactId>
+  <version>0.1.4</version>
+  <executions>
+    <!-- override: nessuna execution, così non parte -->
+  </executions>
+</plugin>
 <plugin>
     <groupId>org.mule.tools.maven</groupId>
     <artifactId>mule-maven-plugin</artifactId>
