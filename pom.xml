@@ -75,12 +75,12 @@
 	</dependencies>
 
 	<repositories>
-		<repositories>
+		
 			  <repository>
 			    <id>anypoint-exchange-v3</id>
 			    <url>https://maven.eu1.anypoint.mulesoft.com/api/v3/organizations/<ORG_ID>/maven</url>
 			  </repository>
-			</repositories>
+			
 			
 			<distributionManagement>
 			  <repository>
