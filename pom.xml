@@ -19,6 +19,34 @@
 
 	<build>
 		<plugins>
+<plugin>
+    <groupId>org.mule.tools.maven</groupId>
+    <artifactId>mule-maven-plugin</artifactId>
+    <version>${mule.maven.plugin.version}</version>
+    <extensions>true</extensions>
+
+
+    <configuration>
+        <cloudhub2Deployment>
+            <uri>https://eu1.anypoint.mulesoft.com</uri>
+            <provider>MC</provider>
+            <environment>dev</environment>
+            <target>Cloudhub-EU-Central-1</target>
+            <muleVersion>4.9.10</muleVersion>
+            <server>anypoint-platform</server>
+            <applicationName>sctech-pipeline-test-app</applicationName>
+            <businessGroupId>13288bb7-ccc4-4108-9e54-24e64a134411</businessGroupId>
+            <replicas>1</replicas>
+            <vCores>0.1</vCores>
+            <artifact>${project.build.directory}/${project.build.finalName}.jar</artifact>
+        </cloudhub2Deployment>
+        <classifier>mule-application</classifier>
+    </configuration>
+</plugin>
+		
+
+
+			
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-clean-plugin</artifactId>
